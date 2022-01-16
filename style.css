@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
 html {
-    font-family: 'Roboto', sans-serif;   
+    font-family: 'Roboto', sans-serif;    
     background-color: #FFFAF5;
     scroll-behavior: smooth;
     color: #8E806A;
-}
-
-div {
-   /* border: 2px solid red;*/
 }
 
 .wrapper {
@@ -35,7 +29,8 @@ nav {
 #navbar li {
     color: #8E806A;
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 a {
@@ -43,16 +38,20 @@ a {
     color: #8E806A;
 }
 
+main {
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+}
 
 .page-area {
-    
+    scroll-snap-align: start;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 75vh;
 }
 
 .page-title {
     font-size: 25px;
-    color: black;
+    color: #8E806A;
 }
 
 #intro-page {
@@ -161,30 +160,32 @@ a {
 
 #skills-page {
     justify-content: center;
-    
+    align-items: center;
 }
 
 .skill-item {
     margin-bottom: 30px;
     padding-top: 15px;
     display: grid;
-    grid-template-rows:    repeat(1, 10px);
-    grid-template-columns: repeat(5, 50px);
+    grid-template-rows:    repeat(1, 3px);
+    grid-template-columns: repeat(5, 100px);
 }
 
 .skill-bar {
     background-color: #DBCEBC;
     margin-left: 10px;
-    border-radius: 20px;
 }
 
 .grey-out {
     background-color: transparent;
-    border: 2px solid #DBCEBC;
+    border: 1px solid #DBCEBC;
 }
 
 #skills-title-area {
+    display: flex;
     padding-bottom: 50px;
+    font-size: 150px;
+    transform: rotate(-90deg);
 }
 
 .skill-title {
@@ -193,11 +194,98 @@ a {
 
 .skills-area {
     text-align: center;
+    padding-left: 200px
 }
 
 #socials-page {
-    height: 100vh;
+    display: flex;
+    
+}
+
+#socials-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-area {
+    display: flex;
+}
+
+.social-icon {
+    font-size: 100px;
+    color:#DBCEBC;
+    margin: 25px;
+}
+
+#contact-page {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    width: 500px;
+    height: 200px;
+    border: 2px solid #DBCEBC;
+    background-color: #FFFAF5;
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #8E806A;
+}
+
+textarea::placeholder {
+    color: #8E806A;
+}
+
+#help-text-field input{
+    width:500px;
+}
+
+.text-field {
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    
+}
+
+.text-field input{
+    border: 2px solid #DBCEBC;
+    border-bottom: none;
+    -webkit-appearance:none;
+    -ms-appearance: none;
+    -moz-appearance:none;
+    appearance: none;
+    background: #FFFAF5;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    outline:none;
+    font-size:14px;
 }
 
 
+.text-field .placeholder {
+    font-family: Roboto;
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    color: #8E806A;
+    transition: 
+        top 0.3s ease,
+        font-size 0.3s ease,
+        color 0.3s ease;
+}
 
+.text-field input:valid + .placeholder,
+.text-field input:focus + .placeholder {
+    top: 10px;
+    font-size: 10px;
+    color: #8E806A;
+}
+
+#contact-msg {
+    padding-top: 30px;
+}
