@@ -10,6 +10,39 @@
   color: black;
 }
 
+.page {
+  width: 100vw;
+  height: 80vh;
+}
+
+.page2 {
+  background-color: aqua;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 nav {
   position: fixed;
   left: 0;
@@ -50,7 +83,6 @@ nav {
   padding: 12px 16px;
   text-decoration: none;
   transition: 0.9s;
-  color: var(--hotpink);
 }
 
 .hamburger {
