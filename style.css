@@ -15,9 +15,14 @@
   height: 80vh;
 }
 
-.page2 {
-  background-color: aqua;
+.page2, .page3, .page4 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
 }
+
 
 .wrapper {
   display: flex;
