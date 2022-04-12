@@ -1,46 +1,8 @@
-const scrollElements = document.querySelectorAll(".js-scroll");
+const hamburger = document.querySelector('.hamburger');
 
-const elementInView = (el, dividend = 1) => {
-  const elementTop = el.getBoundingClientRect().top;
+const mobile_menu = document.querySelector('.mobile-nav');
 
-  return (
-    elementTop <=
-    (window.innerHeight || document.documentElement.clientHeight) / dividend
-  );
-};
-
-const elementOutofView = (el) => {
-  const elementTop = el.getBoundingClientRect().top;
-
-  return (
-    elementTop > (window.innerHeight || document.documentElement.clientHeight)
-  );
-};
-
-const displayScrollElement = (element) => {
-  element.classList.add("scrolled");
-};
-
-const hideScrollElement = (element) => {
-  element.classList.remove("scrolled");
-};
-
-const handleScrollAnimation = () => {
-  scrollElements.forEach((el) => {
-    if (elementInView(el, 1.25)) {
-      displayScrollElement(el);
-    } else if (elementOutofView(el)) {
-      hideScrollElement(el)
-    }
-  })
-}
-
-window.addEventListener("scroll", () => { 
-  handleScrollAnimation();
+hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('is-active');
+    mobile_menu.classList.toggle('is-active');
 });
-
-$(".bar").each(function(){
-    $(this).find(".bar-inner").animate({
-      width: $(this).attr("data-width")
-    },2000)
-  });
