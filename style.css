@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --grayish: #F1F0F0;
   --blackish: #48495A;
@@ -55,6 +59,7 @@
 
 #education-date {
   font-weight: lighter;
+  font-size:17px;
 }
 
 #education-line {
@@ -203,6 +208,7 @@ h4 {
 p {
   font-size: 20px;
   font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
 }
 
 #sidebar {
