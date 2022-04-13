@@ -13,6 +13,7 @@ This website contains the portfolio of Seneca College graduate, Renee Gascon. Th
 ### Features Implemented:
 #### Homepage
 Consists of a navbar, side navbar, and an eyecatching design.
+![homepage](/img/documentation/iteration1/homepage.png)
 
 #### About page
 Consists of Gascon's objective, Education, etc.
