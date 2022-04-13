@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
   --grayish: #F1F0F0;
   --blackish: #48495A;
@@ -15,12 +16,38 @@
   height: 80vh;
 }
 
-.page2, .page3, .page4 {
+.page3, .page4 {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 100px;
+}
+
+.page2 {
+  height: 100vh;
+  flex-direction:column;
+  font-size: 50px;
+}
+
+#about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me h4 {
+  margin-bottom: -15px;
+}
+
+#article1, #article2, #article3 {
+  width: 400px;
+  height: 500px;
+  margin: 90px;
+}
+
+#page-title {
+  padding-left: 40px;
 }
 
 
@@ -146,8 +173,18 @@ nav {
   align-items: center;
 }
 
-h1 {
+h1, h3 {
   font-family: 'Syncopate', sans-serif;
+}
+
+h4 {
+  font-size:30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 #sidebar {
