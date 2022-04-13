@@ -1,5 +1,7 @@
 # Renee Gascon Website
 
+reneegascon.com
+
 ## Mission Statement
 Create aesthetically pleasing, responsive, fluid website to showcase Renee Gascon's portofolio consisting of her background, education, skillset, projects, and contact information.
 
