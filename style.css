@@ -3,9 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-body {
-  min-width: 1280px; 
-}
 
 html {
   scroll-behavior: smooth;
@@ -23,12 +20,10 @@ html {
 }
 
 .page {
-  width: 120vw;
+  width: 100vw;
   height: 80vh;
   
 }
-
-
 
 .page2 {
   display: flex;
